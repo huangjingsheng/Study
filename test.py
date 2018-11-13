@@ -36,7 +36,7 @@ if __name__ == '__main__':
     response = requests.post(url=loginUrl, headers=headers, json=j, verify=True)
     print(response.text)
     a = "userkey"
-    regex = '\"' + a   + '\":\".+?\"'
+    regex = '\"' + a + '\":\".+?\"'
     print(regex)
     ls = re.search(regex,response.text)
     print(ls)
